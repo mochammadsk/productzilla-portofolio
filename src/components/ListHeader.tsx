@@ -5,10 +5,6 @@ type ListProps = {
   children: ReactNode;
 };
 
-type ListPropsIcon = {
-  icon: ReactNode;
-};
-
 function ListHeader({ icon, children }: ListProps) {
   return (
     <li className='flex gap-2 py-1 px-2 hover:bg-[#15191f] cursor-pointer align-center'>
@@ -18,7 +14,7 @@ function ListHeader({ icon, children }: ListProps) {
   );
 }
 
-function ListHeaderIcon({ icon }: ListPropsIcon) {
+function ListHeaderIcon({ icon }: { icon: ReactNode }) {
   return <li className='cursor-pointer'>{icon}</li>;
 }
 
