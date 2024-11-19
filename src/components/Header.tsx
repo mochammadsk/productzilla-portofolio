@@ -16,7 +16,9 @@ function Header() {
           <ListHeaderIcon
             icon={
               <div className='border border-[#9198a1] rounded-lg py-1 px-2 justify-center w-8'>
-                <FontAwesomeIcon icon={faBars} size='1x' color='#9198a1' />
+                <a href='https://github.com/mochammadsk' target='_blank'>
+                  <FontAwesomeIcon icon={faBars} size='1x' color='#9198a1' />
+                </a>
               </div>
             }
           />
