@@ -1,4 +1,5 @@
 import { ListHeader, ListHeaderIcon } from './ListHeader';
+import CurrentDate from './Date';
 import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
@@ -36,11 +37,7 @@ function Header() {
         </div>
 
         <div className='flex gap-3 justify-items-end'>
-          <span className='border border-[#9198a1] rounded-lg px-4'>
-            <text className='text-sm text-[#9198a1] align-middle'>
-              Singaraja, 20 November 2024
-            </text>
-          </span>
+          <CurrentDate />
           <span>
             <a href='https://www.linkedin.com/in/mochammadsk/' target='_blank'>
               <ListHeaderIcon
