@@ -7,8 +7,8 @@ function Experience() {
     <>
       <Header />
       <Title children='EXPERIENCE' />
-      <main className='my-5 mx-10 px-8 flex gap-20'>
-        <div className='w-1/2'>
+      <main className='my-5 mx-10 px-8 flex gap-20 sm:flex-col sm:mx-0 sm:gap-10'>
+        <div className='w-1/2 sm:w-full'>
           <Content
             job='Back End Developer | Ganesha Inovasi Teknologi'
             period='February 2024 - July 2024'
@@ -23,7 +23,7 @@ function Experience() {
           />
         </div>
 
-        <div className='w-1/2'>
+        <div className='w-1/2 sm:w-full'>
           <Content
             job='IT Support | PT. Masterdata Bali'
             period='January 2020 - March 2020'
