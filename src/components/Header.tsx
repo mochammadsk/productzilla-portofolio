@@ -1,61 +1,67 @@
+import { ListHeader, ListHeaderIcon } from './ListHeader';
+import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import {
   faBars,
   faBookOpen,
   faCodeFork,
   faTableList,
 } from '@fortawesome/free-solid-svg-icons';
-import { ListHeader, ListHeaderIcon } from './ListHeader';
 
 function Header() {
   return (
     <header className='bg-[#010409] border-b border-[#9198a1]'>
-      <ul className='list-none flex-col'>
-        <div className='flex items-center p-4'>
+      <div className='flex justify-between gap-3 px-4 pt-4 pb-2'>
+        <div className='flex items-center'>
           <ListHeaderIcon
             icon={
               <div className='border border-[#9198a1] rounded-lg py-1 px-2 justify-center w-8'>
-                <a href='https://github.com/mochammadsk' target='_blank'>
-                  <FontAwesomeIcon icon={faBars} size='1x' color='#9198a1' />
-                </a>
+                <FontAwesomeIcon icon={faBars} size='1x' color='#9198a1' />
               </div>
             }
           />
-          <div className='mx-4'>
-            <ListHeaderIcon
-              icon={<FontAwesomeIcon icon={faGithub} size='2x' />}
-            />
+          <div className='ml-4 mr-2'>
+            <a href='https://github.com/mochammadsk' target='_blank'>
+              <ListHeaderIcon
+                icon={<FontAwesomeIcon icon={faGithub} size='2x' />}
+              />
+            </a>
           </div>
-          <li className='hover:bg-[#15191f] cursor-pointer rounded-lg py-1'>
-            <strong className='text-sm'>mochammadsk</strong>
-          </li>
+          <div className='w-96'>
+            <a className='hover:bg-[#15191f] cursor-pointer rounded-lg py-1 px-3'>
+              <strong className='text-sm'>mochammadsk</strong>
+            </a>
+          </div>
         </div>
 
-        <div className='flex px-3 mb-3'>
-          <ListHeader icon={<FontAwesomeIcon icon={faBookOpen} />}>
-            Overview
-          </ListHeader>
-          <ListHeader icon={<FontAwesomeIcon icon={faCodeFork} />}>
-            Experience
-          </ListHeader>
-          <ListHeader icon={<FontAwesomeIcon icon={faTableList} />}>
-            Project
-          </ListHeader>
+        <div className='flex gap-3 justify-items-end'>
+          <span className='border border-[#9198a1] rounded-lg px-4'>
+            <text className='text-sm text-[#9198a1] align-middle'>
+              Singaraja, 20 November 2024
+            </text>
+          </span>
+          <span>
+            <a href='https://www.linkedin.com/in/mochammadsk/' target='_blank'>
+              <ListHeaderIcon
+                icon={<FontAwesomeIcon icon={faLinkedin} size='2x' />}
+              />
+            </a>
+          </span>
         </div>
-      </ul>
+      </div>
 
-      {/* <ul className='list-none flex py-2'>
-        <ListHeader icon={<FontAwesomeIcon icon={faBookOpen} />}>
-          Overview
+      <nav className='flex px-3.5 gap-1 mb-1'>
+        <ListHeader icon={<FontAwesomeIcon icon={faBookOpen} size='sm' />}>
+          <Link to='/overview'>Overview</Link>
         </ListHeader>
-        <ListHeader icon={<FontAwesomeIcon icon={faCodeFork} />}>
-          Experience
+        <ListHeader icon={<FontAwesomeIcon icon={faCodeFork} size='sm' />}>
+          <Link to='/experience'>Experience</Link>
         </ListHeader>
-        <ListHeader icon={<FontAwesomeIcon icon={faTableList} />}>
-          Project
+        <ListHeader icon={<FontAwesomeIcon icon={faTableList} size='sm' />}>
+          <Link to='/project'>Project</Link>
         </ListHeader>
-      </ul> */}
+      </nav>
     </header>
   );
 }
