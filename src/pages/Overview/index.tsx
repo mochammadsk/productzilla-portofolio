@@ -6,7 +6,7 @@ function Overview() {
   return (
     <>
       <Header />
-      <main className='my-5 mx-10 px-8 flex sm:flex-col gap-20'>
+      <main className='my-5 mx-10 px-8 flex gap-20 lg:flex-col'>
         <div className='w-80 mt-3 justify-items-center'>
           <img
             src={profileImg}
