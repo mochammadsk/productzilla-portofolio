@@ -6,24 +6,30 @@ function Overview() {
   return (
     <>
       <Header />
-      <main className='my-5 mx-10 px-8 flex gap-20 sm:flex-col sm:mx-5 sm:gap-5'>
-        <div className='w-80 mt-3 justify-items-center sm:w-72'>
-          <img
-            src={profileImg}
-            alt='profile'
-            width={296}
-            className='rounded-full sm:w-h-auto sm:h-auto'
-          />
-          <div className='my-2'>
-            <h1 className='text-2xl leading-snug font-bold '>
-              Mochammad Syahrul Kurniawan
-            </h1>
-            <p className='text-[#9198a1] text-xl'>mochammadsk</p>
-            <p className='text-base my-4'>Back End Developer</p>
+      <main className='my-5 mx-10 px-8 flex gap-20 sm:flex-col sm:mx-0 sm:gap-3'>
+        <div className='w-80 mt-3 justify-items-center'>
+          <div className='sm:flex sm:gap-5'>
+            <img
+              src={profileImg}
+              alt='profile'
+              width={296}
+              className='rounded-full sm:w-16 sm:h-16'
+            />
+            <div className='my-2 sm:my-0'>
+              <h1 className='text-2xl leading-snug font-bold sm:text-lg sm:leading-tight'>
+                Mochammad Syahrul Kurniawan
+              </h1>
+              <p className='text-[#9198a1] text-xl sm:text-sm'>mochammadsk</p>
+            </div>
+          </div>
+          <div className='sm:justify-items-start'>
+            <p className='text-sm my-4 sm:text-sm sm:my-3'>
+              Back End Developer
+            </p>
           </div>
 
           <div>
-            <button className='bg-[#212830] border border-[#9198a1] rounded-md py-1 px-2 w-80 sm:w-72'>
+            <button className='bg-[#212830] border border-[#9198a1] rounded-md py-1 px-2 w-80'>
               <a
                 href='https://docs.google.com/document/d/1C-Ws8lI2v6Nry-GS17e3CRpwLk9tPgjy/preview'
                 target='_blank'
