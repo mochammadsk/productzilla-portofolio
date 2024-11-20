@@ -5,7 +5,7 @@ import Project from './pages/Project';
 
 function App() {
   return (
-    <BrowserRouter basename='/overview'>
+    <BrowserRouter>
       <Routes>
         <Route path='/overview' element={<Overview />} />
         <Route path='/experience' element={<Experience />} />
