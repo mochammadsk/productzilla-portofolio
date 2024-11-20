@@ -1,4 +1,5 @@
 import Header from '../../components/Header';
+import Button from '../../components/Button';
 import profileImg from '../../assets/profile.jpg';
 
 function Overview() {
@@ -62,14 +63,7 @@ function Overview() {
               </div>
             </div>
           </form>
-          <div className='mt-5 flex items-center justify-end gap-x-6'>
-            <button
-              type='submit'
-              className='rounded-md bg-[#1f6feb] px-3 py-2 text-sm font-semibold text-white shadow-sm hover:bg-[#4699d8] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#1f6feb]'
-            >
-              Save
-            </button>
-          </div>
+          <Button />
         </div>
       </main>
     </>
