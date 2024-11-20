@@ -50,7 +50,7 @@ function Header() {
 
       <nav className='flex px-3.5 gap-1 mb-1'>
         <ListHeader icon={<FontAwesomeIcon icon={faBookOpen} size='sm' />}>
-          <Link to='/overview'>Overview</Link>
+          <Link to='/'>Overview</Link>
         </ListHeader>
         <ListHeader icon={<FontAwesomeIcon icon={faCodeFork} size='sm' />}>
           <Link to='/experience'>Experience</Link>
