@@ -6,13 +6,13 @@ function Overview() {
   return (
     <>
       <Header />
-      <main className='my-5 mx-10 px-8 flex gap-20 sm:flex-col'>
-        <div className='w-80 mt-3 justify-items-center'>
+      <main className='my-5 mx-10 px-8 flex gap-20 sm:flex-col sm:mx-5 sm:gap-5'>
+        <div className='w-80 mt-3 justify-items-center sm:w-72'>
           <img
             src={profileImg}
             alt='profile'
             width={296}
-            className='rounded-full'
+            className='rounded-full sm:w-h-auto sm:h-auto'
           />
           <div className='my-2'>
             <h1 className='text-2xl leading-snug font-bold '>
@@ -23,7 +23,7 @@ function Overview() {
           </div>
 
           <div>
-            <button className='bg-[#212830] border border-[#9198a1] rounded-md py-1 px-2 w-80'>
+            <button className='bg-[#212830] border border-[#9198a1] rounded-md py-1 px-2 w-80 sm:w-72'>
               <a
                 href='https://docs.google.com/document/d/1C-Ws8lI2v6Nry-GS17e3CRpwLk9tPgjy/preview'
                 target='_blank'
