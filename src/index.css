@@ -17,3 +17,12 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.relative::after {
+  content: '';
+  display: inline-block;
+  background: #eef4fa;
+  height: 1px;
+  margin-top: 1.5em;
+  width: 6em;
+}
