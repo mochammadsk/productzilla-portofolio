@@ -13,7 +13,7 @@ import {
 function Header() {
   return (
     <header className='bg-[#010409] border-b border-[#9198a1]'>
-      <div className='flex justify-between gap-3 px-4 pt-4 pb-2'>
+      <div className='flex justify-between gap-3 px-4 pt-4 pb-2 sm:pt-2 sm:h-16'>
         <div className='flex items-center'>
           <ListHeaderIcon
             icon={
@@ -29,14 +29,14 @@ function Header() {
               />
             </a>
           </div>
-          <div className='w-96'>
+          <div>
             <a className='hover:bg-[#15191f] cursor-pointer rounded-lg py-1 px-3'>
               <strong className='text-sm'>mochammadsk</strong>
             </a>
           </div>
         </div>
 
-        <div className='flex gap-3 justify-items-end'>
+        <div className='gap-3 justify-items-end sm:hidden'>
           <CurrentDate />
           <span>
             <a href='https://www.linkedin.com/in/mochammadsk/' target='_blank'>
