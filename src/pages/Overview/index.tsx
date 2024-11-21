@@ -6,13 +6,13 @@ function Overview() {
   return (
     <>
       <Header />
-      <main className='lg:my-5 lg:mx-10 lg:px-8 lg:flex lg:flex-row lg:gap-20 sm:flex-col sm:mx-0 sm:gap-3'>
-        <div className='lg:w-80 lg:mt-3'>
+      <main className='lg:my-5 lg:mx-10 lg:px-8 lg:flex lg:flex-row lg:gap-20 sm:flex-col sm:m-5 sm:gap-3'>
+        <div className='lg:w-1/3 lg:mt-3'>
           <div className='lg:block sm:flex sm:gap-5'>
             <img
               src={profileImg}
               alt='profile'
-              className='rounded-full lg:w-72 lg:h-72 sm:w-16 sm:h-16'
+              className='rounded-full lg:w-64 lg:h-64 sm:w-16 sm:h-16'
             />
             <div className='lg:my-2 sm:my-0'>
               <h1 className='lg:text-2xl lg:leading-snug font-bold sm:text-lg sm:leading-tight'>
@@ -26,18 +26,15 @@ function Overview() {
           <div className='sm:justify-items-start'>
             <p className='text-sm lg:my-4 sm:my-3'>Back End Developer</p>
           </div>
-
-          <div>
-            <button className='bg-[#212830] border border-[#9198a1] rounded-md py-1 px-2 w-80'>
-              <a
-                href='https://docs.google.com/document/d/1C-Ws8lI2v6Nry-GS17e3CRpwLk9tPgjy/preview'
-                target='_blank'
-                className='text-sm font-bold'
-              >
-                Curriculum Vitae
-              </a>
-            </button>
-          </div>
+          <button className='bg-[#212830] border border-[#9198a1] rounded-md py-1 px-2 w-full'>
+            <a
+              href='https://docs.google.com/document/d/1C-Ws8lI2v6Nry-GS17e3CRpwLk9tPgjy/preview'
+              target='_blank'
+              className='text-sm font-bold'
+            >
+              Curriculum Vitae
+            </a>
+          </button>
         </div>
 
         <div className='border my-7 px-8 rounded-md w-full text-justify'>
