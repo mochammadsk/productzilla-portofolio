@@ -37,7 +37,7 @@ function Header() {
         </div>
 
         <div className='gap-3 justify-items-end items-center lg:flex'>
-          <div className='sm:hidden'>
+          <div className='lg:block sm:hidden'>
             <CurrentDate />
           </div>
           <span className='sm:py-2 sm:block'>
