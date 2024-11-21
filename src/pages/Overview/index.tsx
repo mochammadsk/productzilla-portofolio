@@ -8,17 +8,17 @@ function Overview() {
       <Header />
       <main className='lg:my-5 lg:mx-10 lg:px-8 lg:flex lg:flex-row lg:gap-20 sm:flex-col sm:m-5 sm:gap-3'>
         <div className='lg:w-1/3 lg:mt-3'>
-          <div className='lg:block sm:flex sm:gap-5'>
+          <div className='lg:block sm:flex sm:gap-5 sm:items-center'>
             <img
               src={profileImg}
               alt='profile'
-              className='rounded-full lg:w-64 lg:h-64 sm:w-16 sm:h-16'
+              className='rounded-full lg:w-64 lg:h-64 sm:w-20 sm:h-w-20'
             />
             <div className='lg:my-2 sm:my-0'>
-              <h1 className='lg:text-2xl lg:leading-snug font-bold sm:text-lg sm:leading-tight'>
+              <h1 className='lg:text-2xl lg:leading-snug font-bold sm:text-2xl sm:leading-tight'>
                 Mochammad Syahrul Kurniawan
               </h1>
-              <p className='text-[#9198a1] lg:text-xl sm:text-sm'>
+              <p className='text-[#9198a1] lg:text-xl sm:text-xl'>
                 mochammadsk
               </p>
             </div>
