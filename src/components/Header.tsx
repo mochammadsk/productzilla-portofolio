@@ -36,9 +36,11 @@ function Header() {
           </div>
         </div>
 
-        <div className='gap-3 justify-items-end items-center lg:flex sm:hidden'>
-          <CurrentDate />
-          <span>
+        <div className='gap-3 justify-items-end items-center lg:flex'>
+          <div className='sm:hidden'>
+            <CurrentDate />
+          </div>
+          <span className='sm:py-2 sm:block'>
             <a href='https://www.linkedin.com/in/mochammadsk/' target='_blank'>
               <ListHeaderIcon
                 icon={<FontAwesomeIcon icon={faLinkedin} size='2x' />}
