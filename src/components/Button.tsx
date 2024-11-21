@@ -15,7 +15,7 @@ function Button() {
   };
 
   return (
-    <div className='mt-5 flex items-center justify-end gap-x-6'>
+    <div className='py-5 flex items-center justify-end gap-x-6'>
       <ToastContainer />
       <button
         type='button'

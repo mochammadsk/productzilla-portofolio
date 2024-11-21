@@ -36,7 +36,7 @@ function Header() {
           </div>
         </div>
 
-        <div className='gap-3 justify-items-end sm:hidden'>
+        <div className='gap-3 justify-items-end items-center lg:flex sm:hidden'>
           <CurrentDate />
           <span>
             <a href='https://www.linkedin.com/in/mochammadsk/' target='_blank'>

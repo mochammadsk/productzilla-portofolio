@@ -32,10 +32,8 @@ function CurrentDate() {
   const formattedDate = `${day}, ${date} ${month} ${year}`;
 
   return (
-    <span className='border border-[#9198a1] rounded-lg px-4'>
-      <span className='text-sm text-[#9198a1] align-middle'>
-        {formattedDate}
-      </span>
+    <span className='border border-[#9198a1] rounded-lg h-9 py-1 px-4 lg:align-middle'>
+      <span className='text-sm text-[#9198a1]'>{formattedDate}</span>
     </span>
   );
 }

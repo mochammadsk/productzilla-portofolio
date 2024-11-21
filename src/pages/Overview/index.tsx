@@ -6,26 +6,25 @@ function Overview() {
   return (
     <>
       <Header />
-      <main className='my-5 mx-10 px-8 flex gap-20 sm:flex-col sm:mx-0 sm:gap-3'>
-        <div className='w-80 mt-3 justify-items-center'>
-          <div className='sm:flex sm:gap-5'>
+      <main className='lg:my-5 lg:mx-10 lg:px-8 lg:flex lg:flex-row lg:gap-20 sm:flex-col sm:mx-0 sm:gap-3'>
+        <div className='lg:w-80 lg:mt-3'>
+          <div className='lg:block sm:flex sm:gap-5'>
             <img
               src={profileImg}
               alt='profile'
-              width={296}
-              className='rounded-full sm:w-16 sm:h-16'
+              className='rounded-full lg:w-72 lg:h-72 sm:w-16 sm:h-16'
             />
-            <div className='my-2 sm:my-0'>
-              <h1 className='text-2xl leading-snug font-bold sm:text-lg sm:leading-tight'>
+            <div className='lg:my-2 sm:my-0'>
+              <h1 className='lg:text-2xl lg:leading-snug font-bold sm:text-lg sm:leading-tight'>
                 Mochammad Syahrul Kurniawan
               </h1>
-              <p className='text-[#9198a1] text-xl sm:text-sm'>mochammadsk</p>
+              <p className='text-[#9198a1] lg:text-xl sm:text-sm'>
+                mochammadsk
+              </p>
             </div>
           </div>
           <div className='sm:justify-items-start'>
-            <p className='text-sm my-4 sm:text-sm sm:my-3'>
-              Back End Developer
-            </p>
+            <p className='text-sm lg:my-4 sm:my-3'>Back End Developer</p>
           </div>
 
           <div>
