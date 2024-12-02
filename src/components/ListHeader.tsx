@@ -9,7 +9,7 @@ function ListHeader({ icon, children }: ListProps) {
   return (
     <li className='flex gap-1.5 p-2 hover:bg-[#15191f] cursor-pointer rounded-lg align-center items-center'>
       <div>{icon}</div>
-      <text className='text-sm'>{children}</text>
+      <p className='text-sm'>{children}</p>
     </li>
   );
 }
